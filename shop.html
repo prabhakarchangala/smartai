@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Shop Details</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo-sm">SG</div><div><strong>SmartAIGram</strong><div class="tag small">Empowering Villages with Artificial Intelligence.</div></div></div>
+  <nav class="nav"><a href="home.html">Home</a><a href="products.html">Products</a><a href="offers.html">Offers</a><a href="contact.html">Contact</a></nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <div id="shopBanner" class="shop-banner"></div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+      <div><h3 id="shopName"></h3><div class="muted" id="shopMeta"></div></div>
+      <div style="text-align:right"><div id="openIndicator" style="font-weight:800"></div><div id="shopRating" class="muted"></div></div>
+    </div>
+
+    <div style="margin-top:12px;display:flex;gap:8px">
+      <button class="btn" data-tab="products">Products</button>
+      <button class="btn ghost" data-tab="offers">Offers</button>
+      <button class="btn ghost" data-tab="contact">Contact</button>
+    </div>
+
+    <div id="shopTabs" style="margin-top:12px"></div>
+
+    <div style="margin-top:12px;text-align:center"><button class="btn" id="enquiryBtn">Enquiry</button></div>
+  </div>
+</main>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+// load shop by id param
+const params = new URLSearchParams(location.search); const id = params.get('id') || 'shop1'; openShop(id);
+</script>
+</body>
+</html>

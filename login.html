@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SmartAIGram — Login</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo-sm">SG</div><div><strong>SmartAIGram</strong><div class="tag small">Empowering Villages with Artificial Intelligence.</div></div></div>
+</header>
+
+<main class="container">
+  <section class="card center-card" style="max-width:520px">
+    <h2 style="margin:6px 0">Welcome back</h2>
+    <p class="muted">Login as User or Admin</p>
+
+    <div style="display:flex;gap:12px;margin-top:14px">
+      <button class="btn large" id="userLoginBtn">User Login</button>
+      <button class="btn ghost large" id="adminLoginBtn">Admin Login</button>
+    </div>
+
+    <div style="display:flex;gap:8px;margin-top:12px;justify-content:center">
+      <a href="#" id="registerLink" class="muted">Register</a> · <a href="#" id="forgotLink" class="muted">Forgot Password</a>
+    </div>
+
+    <div style="margin-top:18px" class="muted">Demo credentials: <br>Admin: admin@smartgram.com / admin123<br>User: user1@gram.com / user123</div>
+  </section>
+</main>
+
+<!-- Modal container -->
+<div id="modalRoot"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+document.getElementById('userLoginBtn').addEventListener('click',()=>openLoginModal('user'));
+document.getElementById('adminLoginBtn').addEventListener('click',()=>openLoginModal('admin'));
+document.getElementById('registerLink').addEventListener('click',()=>alert('Register is a demo flow - please use demo accounts.'));
+document.getElementById('forgotLink').addEventListener('click',()=>alert('Forgot Password flow is not connected in demo.'));
+</script>
+</body>
+</html>

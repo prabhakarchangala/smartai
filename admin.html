@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Admin</title><link rel="stylesheet" href="assets/css/style.css"></head><body>
+<header class="topbar"><div class="brand"><div class="logo-sm">SG</div><div><strong>SmartAIGram — Admin</strong><div class="tag small">Admin Panel</div></div></div><nav class="nav"><a href="admin.html">Dashboard</a><a href="home.html">Front</a></nav></header>
+<main class="container">
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3>Admin Dashboard</h3>
+      <div><button class="btn" id="createShopBtn">Add Shop</button><button class="btn ghost" id="logoutAdmin">Logout</button></div>
+    </div>
+    <div class="admin-grid" style="margin-top:12px">
+      <div class="stat card"><strong id="statShops">0</strong><div class="muted">Total Shops</div></div>
+      <div class="stat card"><strong id="statProducts">0</strong><div class="muted">Total Products</div></div>
+      <div class="stat card"><strong id="statOffers">0</strong><div class="muted">Offers</div></div>
+      <div class="stat card"><strong id="statUsers">0</strong><div class="muted">Users</div></div>
+    </div>
+    <div id="adminControls" style="margin-top:12px"></div>
+  </div>
+</main>
+<div id="modalRoot"></div>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script>loadAdmin();</script>
+</body></html>

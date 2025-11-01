@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SmartAIGram — Home</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="logo-sm">SG</div><div><strong>SmartAIGram</strong><div class="tag small">Empowering Villages with Artificial Intelligence.</div></div></div>
+  <nav class="nav"><a href="home.html">Home</a><a href="products.html">Products</a><a href="offers.html">Offers</a><a href="contact.html">Contact</a><a href="shops.html">Shops</a></nav>
+</header>
+
+<main class="container">
+  <section class="card hero">
+    <div class="hero-left">
+      <h3>Top Rated Shops <span class="muted" id="todayDate"></span></h3>
+      <div id="carousel" class="carousel"></div>
+
+      <div class="search-row" style="margin-top:12px">
+        <select id="catSelect" class="input"></select>
+        <input id="searchInput" class="input" placeholder="Search products, shops, clinics..." />
+        <button class="btn" id="searchBtn">Search</button>
+      </div>
+
+      <h4 style="margin-top:12px">Currently Open Shops</h4>
+      <div id="openShops" class="h-scroll"></div>
+
+      <h4 style="margin-top:12px">Offers</h4>
+      <div id="offersRow" class="h-scroll"></div>
+    </div>
+
+    <aside class="sidebar card">
+      <h4>Filters</h4>
+      <label>Category</label><select id="filterCat" class="input"></select>
+      <label>Price</label><select id="filterPrice" class="input"><option value='all'>All</option><option value='low'>Under ₹50</option><option value='mid'>₹50-₹200</option><option value='high'>Above ₹200</option></select>
+      <div style="margin-top:10px"><button class="btn" id="applyFilters">Apply</button></div>
+
+      <div style="margin-top:14px"><button class="btn ghost" id="btnEnquiry">Send Enquiry</button></div>
+    </aside>
+  </section>
+
+  <section class="grid" id="trendingGrid" style="margin-top:14px"></section>
+</main>
+
+<footer class="foot muted">© SmartAIGram — Demo</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>loadHome();</script>
+</body>
+</html>

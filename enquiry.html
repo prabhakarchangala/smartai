@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Enquiry</title><link rel="stylesheet" href="assets/css/style.css"></head><body>
+<header class="topbar"><div class="brand"><div class="logo-sm">SG</div><div><strong>SmartAIGram</strong><div class="tag small">Empowering Villages with Artificial Intelligence.</div></div></div></header>
+<main class="container">
+  <div class="card"><h3>Enquiry</h3>
+    <label>Select Shop</label><select id="enqShop" class="input"></select>
+    <label>Message</label><textarea id="enqText" class="input" placeholder="Your message..."></textarea>
+    <div style="display:flex;gap:8px;margin-top:8px"><button class="btn" id="enqSubmit">Submit</button><a href="home.html" class="btn ghost">Cancel</a></div>
+    <div id="enqSuccess" class="success" style="display:none;margin-top:8px">Enquiry sent (mock)</div>
+  </div>
+</main>
+<script src="assets/js/data.js"></script><script src="assets/js/main.js"></script><script>populateEnquiry();</script>
+</body></html>
